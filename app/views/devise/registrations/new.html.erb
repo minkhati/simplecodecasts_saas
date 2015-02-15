@@ -1,6 +1,6 @@
 <div class="row">
   <div class='col-md-6 col-md-offset-3 text-center'>
-    <% if params[:plan] == '3' %>
+    <% if params[:plan] == '2' %>
       <h1 class='text-center'>Pro Account</h1>
       <p>Sign Up for Pro account for $10/month and get basic access to the community and contact information!</p>    
     <% else %>
@@ -11,7 +11,7 @@
   <div class="col-md-6 col-md-offset-3">
     <div class="well">
       <h2>Sign up</h2>
-      <% if params[:plan] == '3' %>
+      <% if params[:plan] == '2' %>
         <%= render "pro_form" %>
       <% else %>
         <%= render "basic_form" %>
